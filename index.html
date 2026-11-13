@@ -12,12 +12,12 @@ const data=[
 {day:1,time:'09:00',name:'Phoenix Park · Wellington Monument',kind:'Parque',lat:53.348976,lng:-6.303094,desc:'Passeio de cerca de 45–50 min perto do Wellington Monument; nascer do sol cerca das 07:55. Táxi recomendado até à Guinness depois.'},
 {day:1,time:'10:30',name:'Guinness Storehouse',kind:'Experiência · reservar',lat:53.34185,lng:-6.28674,desc:'Entrada proposta para as 10:30, a reservar. Contar 2 h de visita, até cerca das 12:30, incluindo Gravity Bar; confirmar disponibilidade.'},
 {day:1,time:'12:45',name:'Almoço na zona de The Liberties',kind:'Almoço',lat:53.3422,lng:-6.2814,desc:'Almoço de 45–55 min na zona da Guinness. Ponto aproximado; escolher local perto do trajeto para St Patrick’s.'},
-{day:1,time:'14:00',name:'St Patrick’s Cathedral',kind:'Catedral',lat:53.33955,lng:-6.27148,desc:'Visita até cerca das 15:05. Às 14:30 costuma haver visita guiada gratuita para quem tem entrada; confirmar no local.'},
+{day:1,time:'14:00',name:'St Patrick’s Cathedral',kind:'Catedral',lat:53.33955,lng:-6.27148,desc:'Visita autónoma até cerca das 15:05. A visita guiada das 14:30 pode impedir a chegada ao Museu Nacional às 15:30; evitá-la se mantiverem o horário.'},
 {day:1,time:'15:30',name:'National Museum of Ireland · Archaeology',kind:'Museu gratuito',lat:53.34023,lng:-6.25497,desc:'Museu grátis; aberto na quarta-feira 10:00–17:00, com entrada recomendada até 16:30. Prever 60–70 min para as coleções; verificar eventuais encerramentos por greve.'},
 {day:1,time:'16:50',name:'Grafton Street · compras e tempo livre',kind:'Shopping · 1h30',lat:53.3414,lng:-6.26028,desc:'Compras até 18:30: Grafton Street e Stephen’s Green Shopping Centre (edifício aberto quarta até 19:00; cada loja pode fechar a outra hora). A partir do museu ~10 min a pé.'},
-{day:1,time:'19:30',name:'The Brazen Head',kind:'Jantar',lat:53.34494,lng:-6.27631,desc:'Jantar em pub histórico; regresso de Howth e deslocação a pé dão margem, desde que não se atrase demasiado o DART.'},
+{day:1,time:'19:30',name:'The Brazen Head',kind:'Jantar',lat:53.34494,lng:-6.27631,desc:'Jantar em pub histórico. Prever 20–30 min a pé desde Grafton Street; cozinha até às 21:00. Não aceitam reservas para 2 pessoas, por isso pode haver espera.'},
 {day:2,time:'08:00',name:'Keogh’s Cafe',kind:'Pequeno-almoço',lat:53.34411,lng:-6.26222,desc:'Abre às 06:30 às quintas; pequeno-almoço de 35 min para entrar a horas no Trinity College.'},
-{day:2,time:'09:00',name:'Trinity College · Book of Kells Experience',kind:'⭐ OBRIGATÓRIO · reservar bilhete',lat:53.3439,lng:-6.25649,desc:'⭐ VISITA PRIORITÁRIA. Abre às 08:30 às quintas; reservar entrada para 09:00 e contar 75–90 min. A hora proposta ainda não é uma reserva.'},
+{day:2,time:'09:00',name:'Trinity College · Book of Kells Experience',kind:'⭐ OBRIGATÓRIO · reservar bilhete',lat:53.3439,lng:-6.25649,desc:'⭐ VISITA PRIORITÁRIA. Há páginas oficiais com horários matinais diferentes; reservar uma entrada efetiva para 09:00 e contar 75–90 min. A hora proposta ainda não é uma reserva.'},
 {day:2,time:'10:45',name:'National Gallery of Ireland',kind:'Museu gratuito · opcional',lat:53.34161,lng:-6.25239,desc:'Opcional: 40–45 min de visita. À quinta abre 09:15–20:30; se estiverem atrasados, saltar esta visita para preservar o voo.'},
 {day:2,time:'11:40',name:'St Stephen’s Green e Grafton Street',kind:'Jardim e passeio',lat:53.3379,lng:-6.2591,desc:'Passeio curto de 20–25 min, opcional; depois seguir para um almoço rápido. As compras principais já ficam no dia 18.'},
 {day:2,time:'12:10',name:'Almoço ligeiro no centro',kind:'Almoço',lat:53.3432,lng:-6.2614,desc:'Almoço rápido de cerca de 25–30 min, idealmente sanduíche/takeaway. Priorizar recolher as malas atempadamente; ponto aproximado.'},
@@ -65,7 +65,7 @@ const howthOption=[
 {day:1,time:'14:45',name:'Café no porto de Howth',kind:'Lanche',lat:53.3887,lng:-6.0689,desc:'Pausa opcional de 20–30 min no porto, deixando margem para chegar à estação do DART.'},
 {day:1,time:'15:30',name:'Howth DART Station · regresso',kind:'Comboio',lat:53.38911,lng:-6.07437,desc:'Hora indicativa para estar na estação; confirmar próximo DART para Dublin no planeador Irish Rail. Regresso de cerca de 30 min.'},
 {day:1,time:'17:00',name:'GPO e The Spire',kind:'Monumento',lat:53.34935,lng:-6.26051,desc:'Passeio curto por O’Connell Street ao anoitecer. Nesta altura o pôr do sol é por volta das 16:25.'},
-{day:1,time:'19:30',name:'The Brazen Head',kind:'Jantar',lat:53.3443,lng:-6.2765,desc:'Jantar num pub histórico; confirmar mesa.'}
+{day:1,time:'19:30',name:'The Brazen Head',kind:'Jantar',lat:53.3443,lng:-6.2765,desc:'Jantar em pub histórico depois de Howth; cozinha até às 21:00. Não aceitam reservas para 2 pessoas e pode haver fila.'}
 ];
 let day18Option=localStorage.getItem('dublin-day18-option')==='howth'?'howth':'city';
 function activeStops(){return day===1&&day18Option==='howth'?howthOption:data.filter(s=>s.day===day)}
