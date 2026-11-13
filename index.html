@@ -65,7 +65,7 @@ const howthOption=[
 {day:1,time:'14:45',name:'Café no porto de Howth',kind:'Lanche',lat:53.3887,lng:-6.0689,desc:'Pausa opcional de 20–30 min no porto, deixando margem para chegar à estação do DART.'},
 {day:1,time:'15:30',name:'Howth DART Station · regresso',kind:'Comboio',lat:53.38911,lng:-6.07437,desc:'Hora indicativa para estar na estação; confirmar próximo DART para Dublin no planeador Irish Rail. Regresso de cerca de 30 min.'},
 {day:1,time:'17:00',name:'GPO e The Spire',kind:'Monumento',lat:53.34935,lng:-6.26051,desc:'Passeio curto por O’Connell Street ao anoitecer. Nesta altura o pôr do sol é por volta das 16:25.'},
-{day:1,time:'19:30',name:'The Brazen Head',kind:'Jantar',lat:53.3443,lng:-6.2765,desc:'Jantar em pub histórico depois de Howth; cozinha até às 21:00. Não aceitam reservas para 2 pessoas e pode haver fila.'}
+{day:1,time:'19:30',name:'The Brazen Head',kind:'Jantar',lat:53.34494,lng:-6.27631,desc:'Jantar em pub histórico depois de Howth; cozinha até às 21:00. Não aceitam reservas para 2 pessoas e pode haver fila.'}
 ];
 let day18Option=localStorage.getItem('dublin-day18-option')==='howth'?'howth':'city';
 function activeStops(){return day===1&&day18Option==='howth'?howthOption:data.filter(s=>s.day===day)}
