@@ -8,7 +8,7 @@ const data=[
 {day:0,time:'17:20',name:'Café no centro histórico',kind:'Lanche',lat:53.3435,lng:-6.2668,desc:'Pausa opcional de 20–30 min perto de Dame Street; a esta hora já estará escuro.'},
 {day:0,time:'18:00',name:'Temple Bar e Ha’penny Bridge',kind:'Passeio',lat:53.34605,lng:-6.26355,desc:'Passeio pelas ruas iluminadas e pela Ha’penny Bridge, com tempo para entrar num pub antes do jantar.'},
 {day:0,time:'19:30',name:'The Old Storehouse',kind:'Jantar',lat:53.34522,lng:-6.2627,desc:'Jantar com música tradicional. Cozinha fecha às 21:00; às 19:30 há margem para pedir e comer sem pressas. Walk-ins aceites.'},
-{day:1,time:'08:00',name:'Lovinspoon · pequeno-almoço irlandês',kind:'Café local · a pé do hotel',lat:53.35564,lng:-6.26459,desc:'Sair do Point A Hotel por volta das 07:50 e caminhar 7–9 min até 13 North Frederick Street. Café pequeno e independente, com Full Irish Breakfast. Comer até ~08:35; seguir de táxi diretamente para Phoenix Park por volta das 08:40, para chegar às 09:00. Horário de quarta publicado a partir das 08:00; pode haver espera.'},
+{day:1,time:'08:00',name:'Parnell Street Bakery · pequeno-almoço',kind:'Pastelaria local · takeaway',lat:53.35349,lng:-6.25986,desc:'Sair do Point A Hotel pelas 07:50 e caminhar cerca de 5–7 min até 147 Parnell Street. Pastelaria artesanal com croissants, bolos, focaccias e café. Abre às 07:00 à quarta-feira. Não tem mesas interiores: comprar para levar e comer durante uma pequena pausa, se o tempo permitir. Apontar para táxi em direção a Phoenix Park perto das 08:40.'},
 {day:1,time:'09:00',name:'Phoenix Park · Wellington Monument',kind:'Parque',lat:53.348976,lng:-6.303094,desc:'Passeio tranquilo até cerca das 09:45 junto ao Wellington Monument; depois seguir a pé até Collins Barracks (aprox. 20–25 min), entrando às 10:15. Não é necessário visitar o Phoenix Park inteiro.'},
 {day:1,time:'10:15',name:'National Museum of Ireland · Decorative Arts & History (Collins Barracks)',kind:'Museu histórico · gratuito',lat:53.34881,lng:-6.28596,desc:'Visita de 10:15 a 12:00, gratuita, sem reserva individual. Priorizar 1–2 galerias (história militar/independência e design); o museu é grande. Entrada principal pela Benburb Street. À quarta aberto 10:00–17:00. Eventuais galerias podem encerrar temporariamente.'},
 {day:1,time:'12:30',name:'Almoço na zona de The Liberties',kind:'Almoço',lat:53.3422,lng:-6.2814,desc:'Pausa para almoço das 12:30 às 13:20 (cerca de 50 min), perto de Thomas Street, no caminho para St Patrick’s. Saindo do Collins Barracks às 12:00, contar 20–25 min a pé até aqui. O pin assinala a zona, não um restaurante específico.'},
@@ -30,7 +30,7 @@ const officialLinks={
 'Howth East Pier':'https://www.google.com/maps/search/?api=1&query=Howth+East+Pier',
 'Connolly Station · DART para Howth':'https://www.irishrail.ie/',
 'Howth DART Station · regresso':'https://www.irishrail.ie/',
-'Lovinspoon · pequeno-almoço irlandês':'https://www.google.com/maps/search/?api=1&query=Lovinspoon%2013%20North%20Frederick%20Street%20Dublin',
+'Parnell Street Bakery · pequeno-almoço':'https://www.parnellstreetbakery.ie/',
 'National Gallery of Ireland':'https://www.nationalgallery.ie/',
 'Kilmainham Gaol · visita opcional':'https://www.kilmainhamgaolmuseum.ie/',
 'Keogh’s Cafe':'https://www.google.com/maps/search/?api=1&query=Keoghs+Cafe+Dublin',
@@ -57,7 +57,7 @@ const officialLinks={
 };
 function infoLink(s){return officialLinks[s.name]||'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.name+', Dublin, Ireland')}
 const howthOption=[
-{day:1,time:'08:30',name:'Lovinspoon · pequeno-almoço irlandês',kind:'Café local · a pé do hotel',lat:53.35564,lng:-6.26459,desc:'Sair do hotel às 08:15 e caminhar 7–9 min para este café independente em 13 North Frederick Street. Pequeno-almoço até ~09:00; depois caminhar cerca de 20–25 min até à estação Connolly para apanhar o DART. Quarta-feira abre às 08:00, segundo as fontes consultadas.'},
+{day:1,time:'08:30',name:'Parnell Street Bakery · pequeno-almoço',kind:'Pastelaria local · takeaway',lat:53.35349,lng:-6.25986,desc:'Pequeno-almoço de pastelaria e café para levar na 147 Parnell Street (abre às 07:00). Fica a cerca de 5–7 min a pé do hotel; não há mesas interiores. Terminar até 09:00 e seguir a pé para Connolly Station (~15–20 min), com margem para o DART.'},
 {day:1,time:'09:30',name:'Connolly Station · DART para Howth',kind:'Comboio',lat:53.35171,lng:-6.24902,desc:'Chegar à estação por volta das 09:20–09:30. Hora de DART indicativa: consultar o planeador Irish Rail e apanhar comboio para Howth (~30 min).'},
 {day:1,time:'10:30',name:'Howth Harbour',kind:'Passeio',lat:53.3893,lng:-6.0678,desc:'Chegada prevista, dependente do DART. Passeio pelo porto; evitar trilhos das falésias com vento forte.'},
 {day:1,time:'11:30',name:'Howth East Pier',kind:'Passeio',lat:53.39334,lng:-6.06681,desc:'Caminhada pelo cais até ao farol se as condições permitirem; regressar com tempo para almoço às 13:00.'},
